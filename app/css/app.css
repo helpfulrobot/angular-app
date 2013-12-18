@@ -1267,8 +1267,6 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-
 .header { height: 45px; line-height: 43px; background-color: #0f9d58; color: white; width: 100%; text-align: center; }
 .header a { color: white; }
 .header .home-link, .header .logout-link { padding-left: 5px; margin-right: -45px; display: block; float: left; font-size: 1.5em; }
@@ -1277,6 +1275,26 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 .header .logout-link.home { display: block; }
 .header .logo { padding-top: 5px; line-height: 45px; height: 38px; }
 .header .page-title { line-height: 38px; }
+
+/* Custom form styling */
+.actions { margin-top: 20px; }
+
+.btn span { color: #fff; font-weight: normal; }
+
+.btn.metro.polished, .metro .polished.btn, .metro .polished.skiplink { -webkit-box-shadow: 0px 2px 1px 0px #a5a5a5; -moz-box-shadow: 0px 2px 1px 0px #a5a5a5; box-shadow: 0px 2px 1px 0px #a5a5a5; border: 1px solid rgba(0, 0, 0, 0.1); }
+.btn.metro.polished::-moz-focus-inner, .metro .polished.btn::-moz-focus-inner, .metro .polished.skiplink::-moz-focus-inner { padding: 0; border: 0; }
+.btn.metro.polished span, .metro .polished.btn span, .metro .polished.skiplink span { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; display: block; border-top: 2px solid rgba(255, 255, 255, 0.3); text-transform: uppercase; font-size: 14px; padding-top: 2px; line-height: 2em; }
+
+.field .input { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; font-size: 16px; font-size: 1rem; height: 35px; line-height: 33px; background: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; font-size: 14px; }
+.field .input.textarea { height: auto; }
+
+/* Form Picker Element (<select>) */
+.picker { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; width: 100%; border-top: 2px solid rgba(255, 255, 255, 0.5); border-left: 2px solid rgba(255, 255, 255, 0.5); border-bottom: 2px solid #d1d1d1; border-right: 2px solid #d1d1d1; background: #e0e0e0; }
+.picker:after { color: #00974d; content: "\25BE"; font-family: entypo; margin-top: -12px; position: absolute; right: 8%; top: 50%; z-index: 0; }
+.picker select { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-appearance: none; appearance: none; font-size: 13px; width: 115%; }
+.picker select option[default] { color: #ccc; }
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
 .right-align { text-align: right; }
 
@@ -1289,16 +1307,7 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 @media only screen and (min-width: 768px) { .two-across { width: 50%; } }
 @media only screen and (min-width: 940px) { .two-across { width: 50%; } }
 
-.actions { margin-top: 20px; }
-
-.btn span { color: #fff; font-weight: normal; }
-
-.btn.metro.polished, .metro .polished.btn, .metro .polished.skiplink { -webkit-box-shadow: 0px 2px 1px 0px #a5a5a5; -moz-box-shadow: 0px 2px 1px 0px #a5a5a5; box-shadow: 0px 2px 1px 0px #a5a5a5; border: 1px solid rgba(0, 0, 0, 0.1); }
-.btn.metro.polished span, .metro .polished.btn span, .metro .polished.skiplink span { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; display: block; border-top: 2px solid rgba(255, 255, 255, 0.3); text-transform: uppercase; font-size: 14px; padding-top: 2px; line-height: 2em; }
-
 .menu-thumb { text-align: center; }
 .menu-thumb i { font-size: 60px; line-height: 1.5em; }
 .menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 60px; padding-top: 40px; }
 .menu-thumb a:hover { background-color: #dbdbdb; }
-
-.picker { width: 100%; }

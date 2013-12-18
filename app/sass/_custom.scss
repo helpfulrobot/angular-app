@@ -12,46 +12,12 @@
 	border: 0;
 }
 
-
-.header {
-	@include line-and-height(45px);
-	background-color: $navbar-color;
-	color: $navbar-link-color;
-	width:100%;
-	text-align:center;
-	a {
-		color: $navbar-link-color;
-	}
-	.home-link, .logout-link{
-		padding-left:5px;
-		margin-right:-45px; //fix centering of heading
-		display:block;
-		float:left;
-		font-size:1.5em;
-	}
-	.home-link.home{
-		display:none;
-	}
-	.logout-link{
-		display:none;
-		&.home{
-			display:block;
-		}
-	}
-	.logo {
-		padding-top: 5px;
-		line-height:45px;
-		height:38px;
-	}
-	.page-title {
-		line-height:38px;
-	}
-}
-
 .right-align{
 	text-align:right;
 }
 
+
+//Layout classes
 .row-small-gutter{
 	clear:both;
 	padding: 5px;
@@ -65,29 +31,6 @@
 .two-across{
 	@include fancytiles(2,2,2);
 	min-height:40px;
-}
-
-.actions{
-	margin-top:20px;
-}
-
-.btn span{
-	color:#fff;
-	font-weight:normal;
-}
-
-.btn.metro.polished{
-	@include box-shadow(0px 2px 1px 0px darken($global-bg-color, 25%));
-	border:1px solid rgba(#000, 0.1);
-	span{
-		@include border-radius(3px);
-		display:block;
-		border-top:2px solid rgba(#fff, 0.3);
-		text-transform: uppercase;
-		font-size: 14px;
-		padding-top:2px;
-		line-height:2em;
-	}
 }
 
 .menu-thumb{
@@ -112,6 +55,4 @@
 	}
 }
 
-.picker{
-	width:100%;
-}
+
