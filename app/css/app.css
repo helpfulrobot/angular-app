@@ -1269,14 +1269,14 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
 
-.header { height: 40px; line-height: 38px; background-color: #0f9d58; color: white; width: 100%; text-align: center; }
+.header { height: 45px; line-height: 43px; background-color: #0f9d58; color: white; width: 100%; text-align: center; }
 .header a { color: white; }
-.header .home-link, .header .logout-link { padding-left: 5px; display: block; float: left; font-size: 1.5em; }
+.header .home-link, .header .logout-link { padding-left: 5px; margin-right: -45px; display: block; float: left; font-size: 1.5em; }
 .header .home-link.home { display: none; }
-.header .logout-link { display: none; font-size: 1.2em; }
+.header .logout-link { display: none; }
 .header .logout-link.home { display: block; }
-.header .logo { padding-top: 5px; line-height: 40px; height: 34px; }
-.header .page-title { line-height: 32px; }
+.header .logo { padding-top: 5px; line-height: 45px; height: 38px; }
+.header .page-title { line-height: 38px; }
 
 .right-align { text-align: right; }
 
