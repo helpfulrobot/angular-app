@@ -5,8 +5,8 @@
 // Grid Settings
 $row-max-width: 940px !default;
 $gutter-in-px: 20px !default;
-$cols: 12 !default;
-$hybrid: 16 !default;
+$cols: 6 !default;
+$hybrid: 12 !default;
 
 // Responsiveness Settings
 $min-device-width: 320px;
@@ -45,7 +45,7 @@ $rhythm-height:  .711;
 // Modular Scale Settings
 // http://www.modularscale.com by Tim Brown
 // https://github.com/scottkellum/modular-scale
-$ratio: golden();
+$ratio: minor-sixth();
 $base-font-size: 16px !default;
 $importantNum: 78px !default;
 $base-size:  $base-font-size $importantNum;
@@ -66,37 +66,37 @@ $tremendous:  ms(9);
 $absurd:  ms(10);
 
 // Typography Colors
-$header-font-color: #444444 !default;
+$header-font-color: #2F2F2F !default;
 $header-link-color:  #d04526 !default;
 $header-link-hover-color:  #c03d20 !default;
-$body-font-color: #555555 !default;
-$body-link-color: #d04526 !default;
+$body-font-color: #2F2F2F !default;
+$body-link-color: #00974D !default;
 $body-link-hover-color:  #c03d20 !default;
 
 // User Interface Colors
-$global-bg-color: #ffffff;
-$navbar-color: #4a4d50;
+$global-bg-color: #E5E5E5;
+$navbar-color: #0F9D58;
 $navbar-link-color: #ffffff;
-$primary-color: #3085d6;
+$primary-color: #0F9D58;
 $secondary-color: #42a35a;
-$default-color: #f2f2f2;
-$info-color: #4a4d50;
+$default-color: #C5C5C5;
+$info-color: #9D9D9D;
 $danger-color: #ca3838;
 $warning-color: #f6b83f;
-$success-color: #58c026;
-$primary-hover-color: #58b2fa;
+$success-color: #6BC362;
+$primary-hover-color: #6dbb80;
 $secondary-hover-color: #6dbb80;
-$default-hover-color: #ffffff;
-$info-hover-color: #868d92;
+$default-hover-color: #888888;
+$info-hover-color: #333333;
 $danger-hover-color: #f14f4f;
 $warning-hover-color: #fdd27f;
-$success-hover-color: #66d92f;
+$success-hover-color: #6dbb80;
 $horizontal-rule-color:  #ccc !default;
 $black:  #000;
 $white:  #fff;
 
 // Borders
-$button-radius: 0px;
+$button-radius: 3px;
 $metro-radius:  0 !default;
 $bigger-radius:  8px;
 
@@ -108,7 +108,7 @@ $medium-button-font-size:  $norm;
 $small-button-font-size:  $small;
 
 // Padding
-$default-button-padding: 20px;
+$default-button-padding: 30px;
 
 // Height
 $default-button-height:  36px;

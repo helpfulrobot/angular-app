@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="springboardApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Springboard</title>
+		<link rel="stylesheet" href="../css/app.css"/>
+	</head>
+	<body>
+		<div ng-view>
+
+		</div>
+
+		<nav class="header">
+			<a href="/" class="home-link"><i class="icon-home"></i></a>
+				<img class="logo" src="../img/logo.png" alt="Springboard*">
+		</nav>
+
+		<article class="menu-thumb columns three">
+			<i class="icon-rss"></i>
+			<h2>What's new</h2>
+		</article>
+		<article class="menu-thumb columns three">
+			<i class="icon-message"></i>
+			<h2>Share message</h2>
+		</article>
+		<article class="menu-thumb columns three">
+			<i class="icon-photo"></i>
+			<h2>Upload Photo</h2>
+		</article>
+		<article class="menu-thumb columns three">
+			<i class="icon-profile"></i>
+			<h2>Your Profile</h2>
+		</article>
+
+
+
+		<script src="../lib/angular/angular.js"></script>
+		<script src="../lib/angular/angular-route.js"></script>
+		<script src="../../../content-api/javascript/angular/services.js"></script>
+		<script src="../js/app.js"></script>
+		<script src="../js/services.js"></script>
+		<script src="../js/controllers.js"></script>
+		<script src="../js/filters.js"></script>
+		<script src="../js/directives.js"></script>
+	</body>
+</html>
