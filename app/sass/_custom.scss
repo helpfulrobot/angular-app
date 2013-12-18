@@ -22,16 +22,29 @@
 	a {
 		color: $navbar-link-color;
 	}
-	.home-link{
+	.home-link, .logout-link{
 		padding-left:5px;
 		display:block;
 		float:left;
 		font-size:1.5em;
 	}
+	.home-link.home{
+		display:none;
+	}
+	.logout-link{
+		display:none;
+		font-size:1.2em;
+		&.home{
+			display:block;
+		}
+	}
 	.logo {
 		padding-top: 5px;
 		line-height:40px;
 		height:34px;
+	}
+	.page-title {
+		line-height:32px;
 	}
 }
 
@@ -50,6 +63,7 @@
 	min-height:40px;
 }
 
+
 .menu-thumb{
 	text-align:center;
 	i {
@@ -66,8 +80,8 @@
 		display:block;
 		padding-bottom:80px;
 		padding-top:45px;
-		&.first{
-
+		&:hover{
+			background-color: darken($global-bg-color, 4%);
 		}
 	}
 }

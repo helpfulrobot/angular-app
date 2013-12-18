@@ -642,7 +642,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "Open Sans"; font-weight: Normal; color: #
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #d04526; }
 
 @media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
-h1 { font-size: 16px; font-size: 1rem; }
+h1 { font-size: 16px; font-size: 1rem; line-height: 1.5em; color: #fff; }
 h1.xlarge { font-size: 105px; font-size: 6.5625rem; }
 h1.xxlarge { font-size: 125px; font-size: 7.8125rem; }
 h1.absurd { font-size: 168px; font-size: 10.5rem; }
@@ -662,7 +662,6 @@ h6 { font-size: 16px; font-size: 1rem; }
 
 time, .username { font-size: 19px; font-size: 1.1875rem; }
 
-time { text-align: right; font-size: 19px; font-size: 1.1875rem; }
 time .first { font-weight: bold; }
 
 .subhead { color: #777; font-weight: normal; margin-bottom: 20px; }
@@ -673,7 +672,7 @@ p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 19px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
 a { color: #00974d; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #333333; }
+a:hover { color: #666666; }
 
 /*=====================================================
  Lists  ======================================================*/
@@ -1272,8 +1271,12 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .header { height: 40px; line-height: 38px; background-color: #0f9d58; color: white; width: 100%; text-align: center; }
 .header a { color: white; }
-.header .home-link { padding-left: 5px; display: block; float: left; font-size: 1.5em; }
+.header .home-link, .header .logout-link { padding-left: 5px; display: block; float: left; font-size: 1.5em; }
+.header .home-link.home { display: none; }
+.header .logout-link { display: none; font-size: 1.2em; }
+.header .logout-link.home { display: block; }
 .header .logo { padding-top: 5px; line-height: 40px; height: 34px; }
+.header .page-title { line-height: 32px; }
 
 .right-align { text-align: right; }
 
@@ -1287,3 +1290,4 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 .menu-thumb { text-align: center; }
 .menu-thumb i { font-size: 60px; line-height: 1.5em; }
 .menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 80px; padding-top: 45px; }
+.menu-thumb a:hover { background-color: #dbdbdb; }
