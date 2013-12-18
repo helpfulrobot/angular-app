@@ -648,7 +648,7 @@ h1.xxlarge { font-size: 125px; font-size: 7.8125rem; }
 h1.absurd { font-size: 168px; font-size: 10.5rem; }
 h1 .first { font-weight: bold; }
 
-h2 { font-size: 16px; font-size: 1rem; }
+h2 { font-size: 16px; font-size: 1rem; line-height: 1.5em; margin-bottom: 20px; }
 h2 .first { font-weight: bold; }
 
 h3 { font-size: 16px; font-size: 1rem; }
@@ -1282,6 +1282,8 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .row-small-gutter { clear: both; padding: 5px; margin-top: 20px; }
 
+.main { margin-top: 20px; }
+
 .two-across { display: inline-block; float: left; padding-left: 1.06383%; padding-right: 1.06383%; width: 50%; min-height: 40px; }
 @media only screen and (min-width: 0px) { .two-across { width: 50%; } }
 @media only screen and (min-width: 768px) { .two-across { width: 50%; } }
@@ -1298,3 +1300,5 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 .menu-thumb i { font-size: 60px; line-height: 1.5em; }
 .menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 60px; padding-top: 40px; }
 .menu-thumb a:hover { background-color: #dbdbdb; }
+
+.picker { width: 100%; }

@@ -58,6 +58,10 @@
 	margin-top:20px;
 }
 
+.main{
+	margin-top:20px;
+}
+
 .two-across{
 	@include fancytiles(2,2,2);
 	min-height:40px;
@@ -106,4 +110,8 @@
 			background-color: darken($global-bg-color, 4%);
 		}
 	}
+}
+
+.picker{
+	width:100%;
 }

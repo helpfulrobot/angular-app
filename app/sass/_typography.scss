@@ -38,6 +38,8 @@ h1 {
 }
 h2 { 
   @include font-size($norm);
+  line-height:1.5em;
+  margin-bottom:20px;
   .first{
     font-weight:bold;
   } 
