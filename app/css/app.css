@@ -1287,7 +1287,14 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 @media only screen and (min-width: 768px) { .two-across { width: 50%; } }
 @media only screen and (min-width: 940px) { .two-across { width: 50%; } }
 
+.actions { margin-top: 20px; }
+
+.btn span { color: #fff; font-weight: normal; }
+
+.btn.metro.polished, .metro .polished.btn, .metro .polished.skiplink { -webkit-box-shadow: 0px 2px 1px 0px #a5a5a5; -moz-box-shadow: 0px 2px 1px 0px #a5a5a5; box-shadow: 0px 2px 1px 0px #a5a5a5; border: 1px solid rgba(0, 0, 0, 0.1); }
+.btn.metro.polished span, .metro .polished.btn span, .metro .polished.skiplink span { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; display: block; border-top: 2px solid rgba(255, 255, 255, 0.3); text-transform: uppercase; font-size: 14px; padding-top: 2px; line-height: 2em; }
+
 .menu-thumb { text-align: center; }
 .menu-thumb i { font-size: 60px; line-height: 1.5em; }
-.menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 60px; padding-top: 45px; }
+.menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 60px; padding-top: 40px; }
 .menu-thumb a:hover { background-color: #dbdbdb; }
