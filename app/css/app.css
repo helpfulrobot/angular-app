@@ -1289,5 +1289,5 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .menu-thumb { text-align: center; }
 .menu-thumb i { font-size: 60px; line-height: 1.5em; }
-.menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 80px; padding-top: 45px; }
+.menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 60px; padding-top: 45px; }
 .menu-thumb a:hover { background-color: #dbdbdb; }
