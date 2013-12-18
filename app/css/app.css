@@ -642,23 +642,29 @@ h1, h2, h3, h4, h5, h6 { font-family: "Open Sans"; font-weight: Normal; color: #
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #d04526; }
 
 @media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
-h1 { font-size: 66px; font-size: 4.125rem; }
+h1 { font-size: 16px; font-size: 1rem; }
 h1.xlarge { font-size: 105px; font-size: 6.5625rem; }
 h1.xxlarge { font-size: 125px; font-size: 7.8125rem; }
 h1.absurd { font-size: 168px; font-size: 10.5rem; }
+h1 .first { font-weight: bold; }
 
-h2 { font-size: 41px; font-size: 2.5625rem; }
+h2 { font-size: 16px; font-size: 1rem; }
+h2 .first { font-weight: bold; }
 
-h3 { font-size: 30px; font-size: 1.875rem; }
+h3 { font-size: 16px; font-size: 1rem; }
+h3 .first { font-weight: bold; }
 
-h4 { font-size: 26px; font-size: 1.625rem; }
+h4 { font-size: 16px; font-size: 1rem; }
 
-h5 { font-size: 19px; font-size: 1.1875rem; }
+h5 { font-size: 16px; font-size: 1rem; }
 
 h6 { font-size: 16px; font-size: 1rem; }
 
-@media only screen and (max-width: 767px) { h1 { font-size: 41px; font-size: 2.5625rem; }
-  h2 { font-size: 36px; font-size: 2.25rem; } }
+time, .username { font-size: 19px; font-size: 1.1875rem; }
+
+time { text-align: right; font-size: 19px; font-size: 1.1875rem; }
+time .first { font-weight: bold; }
+
 .subhead { color: #777; font-weight: normal; margin-bottom: 20px; }
 
 /*=====================================================  Links & Paragraph styles  ======================================================*/
@@ -667,7 +673,7 @@ p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 19px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
 a { color: #00974d; text-decoration: none; outline: 0; line-height: inherit; }
-a:hover { color: #c03d20; }
+a:hover { color: #333333; }
 
 /*=====================================================
  Lists  ======================================================*/
@@ -1001,7 +1007,6 @@ img { -ms-interpolation-mode: bicubic; }
   .row { width: 100%; min-width: 0; margin-left: 0; margin-right: 0; }
   .row .row .column, .row .row .columns { padding: 0; }
   .row .centered { margin-left: 0 !important; }
-  .column, .columns { width: auto !important; float: none; margin-left: 0; margin-right: 0; }
   .column:last-child, .columns:last-child { margin-right: 0; float: none; }
   [class*="column"] + [class*="column"]:last-child { float: none; }
   [class*="column"]:before { display: table; }
@@ -1263,7 +1268,22 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
+
 .header { height: 40px; line-height: 38px; background-color: #0f9d58; color: white; width: 100%; text-align: center; }
 .header a { color: white; }
 .header .home-link { padding-left: 5px; display: block; float: left; font-size: 1.5em; }
 .header .logo { padding-top: 5px; line-height: 40px; height: 34px; }
+
+.right-align { text-align: right; }
+
+.row-small-gutter { clear: both; padding: 5px; margin-top: 20px; }
+
+.two-across { display: inline-block; float: left; padding-left: 1.06383%; padding-right: 1.06383%; width: 50%; min-height: 40px; }
+@media only screen and (min-width: 0px) { .two-across { width: 50%; } }
+@media only screen and (min-width: 768px) { .two-across { width: 50%; } }
+@media only screen and (min-width: 940px) { .two-across { width: 50%; } }
+
+.menu-thumb { text-align: center; }
+.menu-thumb i { font-size: 60px; line-height: 1.5em; }
+.menu-thumb a { -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; background-color: #e0e0e0; border-bottom: 1px solid #ededed; border-left: 1px solid #d8d8d8; border-right: 1px solid #ededed; border-top: 1px solid #d8d8d8; display: block; padding-bottom: 80px; padding-top: 45px; }

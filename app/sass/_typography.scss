@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1 {
-  @include font-size($xxxlarge);
+  @include font-size($norm);
   &.xlarge {
     @include font-size($reallybig);
   }
@@ -30,19 +30,38 @@ h1 {
   &.absurd {
     @include font-size($absurd);
   }
+  .first{
+    font-weight:bold;
+  }
 }
-h2 { @include font-size($xlarge); }
-h3 { @include font-size($larger);}
-h4 { @include font-size($large);}
-h5 { @include font-size($med);}
+h2 { 
+  @include font-size($norm);
+  .first{
+    font-weight:bold;
+  } 
+}
+h3 { 
+  @include font-size($norm);
+  .first{
+    font-weight:bold;
+  }
+
+}
+h4 { @include font-size($norm);}
+h5 { @include font-size($norm);}
 h6 { @include font-size($norm);}
 
-@include respond(all-phones) {
-
-  h1 { @include font-size($xlarge);}
-  h2 { @include font-size($larger + 6);}
-
+time, .username{
+  @include font-size($med);
 }
+
+time{
+  .first{
+    font-weight:bold;
+  } 
+}
+
+
 
 .subhead {
   color: #777;
